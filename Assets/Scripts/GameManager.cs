@@ -15,6 +15,8 @@ public class GameManager : MonoBehaviour
     private float gameTimer { get; set; } = 0;
     private const float preparationTime = 10;
 
+    public int gold { get; set; } = 10;
+
     private void Awake()
     {
         instance = this;
@@ -47,5 +49,12 @@ public class GameManager : MonoBehaviour
 
                 break;
         }
+    }
+
+    public void AddGold (int value)
+    {
+        gold += value;
+        UIManager.instance.SetGold(gold);
+
     }
 }
