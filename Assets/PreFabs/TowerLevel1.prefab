@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 2906161520816036649}
   - component: {fileID: 7339022053793760703}
   - component: {fileID: 2156130827415040599}
+  - component: {fileID: 27193409687491977}
   m_Layer: 0
   m_Name: TowerLevel1
   m_TagString: Untagged
@@ -42,9 +43,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 7205286662897864141}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3e456cde6aaf5cc4a95cbd9f831aeed6, type: 3}
+  m_Script: {fileID: 11500000, guid: 2638e7ed912c2e64484e5882192d4b53, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _upgrade: {fileID: 0}
+  _fireRate: 0.1
 --- !u!65 &2156130827415040599
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -57,6 +60,19 @@ BoxCollider:
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!135 &27193409687491977
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7205286662897864141}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 4
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &8587797970066702567
 GameObject:
